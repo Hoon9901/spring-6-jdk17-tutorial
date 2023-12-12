@@ -2,9 +2,9 @@ package com.spring6starter.hoon.section2.iteration1;
 
 public class GameRunner {
 
-    private MarioGame game;
+    private SuperContraGame game;
 
-    public GameRunner(MarioGame game) {
+    public GameRunner(SuperContraGame game) {
         this.game = game;
     }
 
