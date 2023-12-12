@@ -9,6 +9,5 @@ public class GameApplication {
             GameRunner gameRunner = context.getBean(GameRunner.class);
             gameRunner.run();
         }
-
     }
 }
