@@ -1,6 +1,4 @@
-package com.spring6starter.hoon.section2.game;
-
-import java.util.DoubleSummaryStatistics;
+package com.spring6starter.hoon.section2.iteration3;
 
 public class KartGame implements ConsoleGame {
 
