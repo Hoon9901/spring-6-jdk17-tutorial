@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.spring6starter</groupId>
-    <artifactId>hoon</artifactId>
+    <artifactId>hoon-01</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring6</name>
     <description>spring6</description>
