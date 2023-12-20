@@ -9,6 +9,7 @@ public class GameRunner {
     }
 
     public void run() {
+        System.out.println("Running game : " + this.toString());
         game.up();
         game.down();
         game.left();

@@ -25,7 +25,13 @@ public class GameConfiguration {
     }
 
     @Bean
+    @Primary
     public GameRunner gameRunner(ConsoleGame consoleGame) {
+        return new GameRunner(consoleGame);
+    }
+
+    @Bean
+    public GameRunner gameRunner2(@Qualifier("marioGame") ConsoleGame consoleGame) {
         return new GameRunner(consoleGame);
     }
 
