@@ -1,5 +1,8 @@
 package com.spring6starter.hoon.section2.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class KartGame implements ConsoleGame {
 
     @Override

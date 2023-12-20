@@ -1,5 +1,8 @@
 package com.spring6starter.hoon.section2.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
 
     private ConsoleGame game;
@@ -9,7 +12,7 @@ public class GameRunner {
     }
 
     public void run() {
-        System.out.println("Running game : " + this.toString());
+        System.out.println("Running game : " + game.toString());
         game.up();
         game.down();
         game.left();
