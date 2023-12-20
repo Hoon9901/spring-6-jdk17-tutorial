@@ -1,5 +1,6 @@
 package com.spring6starter.hoon.section2.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -7,7 +8,7 @@ public class GameRunner {
 
     private ConsoleGame game;
 
-    public GameRunner(ConsoleGame game) {
+    public GameRunner(@Qualifier("marioGame") ConsoleGame game) {
         this.game = game;
     }
 
