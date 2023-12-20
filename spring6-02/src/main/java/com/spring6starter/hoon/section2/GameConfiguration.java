@@ -1,5 +1,9 @@
-package com.spring6starter.hoon.section2.iteration3;
+package com.spring6starter.hoon.section2;
 
+import com.spring6starter.hoon.section2.game.ConsoleGame;
+import com.spring6starter.hoon.section2.game.GameRunner;
+import com.spring6starter.hoon.section2.game.KartGame;
+import com.spring6starter.hoon.section2.game.MarioGame;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,4 +28,5 @@ public class GameConfiguration {
     public GameRunner gameRunner(ConsoleGame consoleGame) {
         return new GameRunner(consoleGame);
     }
+
 }

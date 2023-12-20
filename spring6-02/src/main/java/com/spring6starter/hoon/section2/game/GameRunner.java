@@ -1,4 +1,4 @@
-package com.spring6starter.hoon.section2.iteration2;
+package com.spring6starter.hoon.section2.game;
 
 public class GameRunner {
 
@@ -9,7 +9,6 @@ public class GameRunner {
     }
 
     public void run() {
-        System.out.println("Running game : " + game);
         game.up();
         game.down();
         game.left();

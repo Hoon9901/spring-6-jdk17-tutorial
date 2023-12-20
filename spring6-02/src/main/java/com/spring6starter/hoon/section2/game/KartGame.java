@@ -1,4 +1,4 @@
-package com.spring6starter.hoon.section2.iteration3;
+package com.spring6starter.hoon.section2.game;
 
 public class KartGame implements ConsoleGame {
 

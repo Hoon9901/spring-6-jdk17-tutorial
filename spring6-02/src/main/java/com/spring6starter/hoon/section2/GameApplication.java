@@ -1,5 +1,6 @@
-package com.spring6starter.hoon.section2.iteration3;
+package com.spring6starter.hoon.section2;
 
+import com.spring6starter.hoon.section2.game.GameRunner;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class GameApplication {
