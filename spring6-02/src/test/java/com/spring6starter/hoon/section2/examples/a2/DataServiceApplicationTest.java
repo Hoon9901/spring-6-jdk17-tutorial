@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DataServiceApplicationTest {
@@ -14,6 +16,9 @@ class DataServiceApplicationTest {
     @Test
     @DisplayName("findMax() 호출")
     void findMax() {
+        Arrays.stream(ac.getBeanDefinitionNames())
+                .forEach(System.out::println);
+
         BusinessCalculationService service = ac.getBean(BusinessCalculationService.class);
         System.out.println(service.findMax());
     }
