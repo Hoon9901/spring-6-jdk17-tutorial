@@ -15,15 +15,24 @@ class YourBusinessClass {
 
     Dependency2 dependency2;
 
-    @Autowired
-    public void setDependency1(Dependency1 dependency1) {
+    // @Autowired // 없어도 자동으로 주입함
+    public YourBusinessClass(Dependency1 dependency1, Dependency2 dependency2) {
+        System.out.println("Constructor Injection");
         this.dependency1 = dependency1;
-    }
-
-    @Autowired
-    public void setDependency2(Dependency2 dependency2) {
         this.dependency2 = dependency2;
     }
+
+    //    @Autowired
+//    public void setDependency1(Dependency1 dependency1) {
+//        System.out.println("Setter Injection - setDependency1");
+//        this.dependency1 = dependency1;
+//    }
+//
+//    @Autowired
+//    public void setDependency2(Dependency2 dependency2) {
+//        System.out.println("Setter Injection - setDependency2");
+//        this.dependency2 = dependency2;
+//    }
 
     @Override
     public String toString() {
