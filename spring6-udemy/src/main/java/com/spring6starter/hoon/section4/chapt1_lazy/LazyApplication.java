@@ -1,4 +1,4 @@
-package com.spring6starter.hoon.section4.lazy;
+package com.spring6starter.hoon.section4.chapt1_lazy;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
