@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8a6951d-df69-4ef7-a0de-33d5fd2d783b" name="Changes" comment="BusinessCalculationService 예제 구현&#10;&#10;- 생성자 주입으로 의존성 주입 받기&#10;- MongoDbDataService 를 Primary Bean 설정&#10;- Spring 컨텍스트 생성">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/GameApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/examples/a0/SimpleSpringContextLauncherApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/examples/a1/DepInjectionLauncherApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/examples/a2/BusinessCalculationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/examples/a2/DataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/examples/a2/DataServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/examples/a2/MongoDbDataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/examples/a2/MySQLDataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/game/ConsoleGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/game/GameRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/game/KartGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/game/MarioGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring6starter/hoon/Spring6ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring6starter/hoon/section2/examples/a2/DataServiceApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration1/GameApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration1/GameRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration1/MarioGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration1/SuperContraGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration2/ConsoleGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration2/GameApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration2/GameRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration2/KartGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration2/MarioGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration2/SuperContraGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration3/ConsoleGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration3/GameApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration3/GameConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration3/GameRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration3/KartGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/java/com/spring6starter/hoon/section2/iteration3/MarioGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring6/src/test/java/com/spring6starter/hoon/Spring6ApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.asdf/installs/java/zulu-17.32.13/lib/src.zip!/java.base/jdk/internal/reflect/DelegatingConstructorAccessorImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.0.14/spring-beans-6.0.14-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.0.14/spring-beans-6.0.14-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/6.0.14/spring-context-6.0.14-sources.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/6.0.14/spring-context-6.0.14-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ZOkARqNJGdYlHIQjKzqC1QiAuV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/seonghun/development/udemy-spring-6/spring6-02",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.14914773",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.spring6starter.hoon.section2.iteration1" />
+      <recent name="com.spring6starter.hoon.game" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/iteration2" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.spring6starter.hoon.section2.examples.a2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spring6starter.hoon.section2.examples.a0" />
+      <recent name="com.spring6starter.hoon.section2.game" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DataServiceApplicationTest.findMax">
+    <configuration name="DepInjectionLauncherApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spring6starter.hoon.section2.examples.a1.DepInjectionLauncherApplication" />
+      <module name="hoon-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring6starter.hoon.section2.examples.a1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleSpringContextLauncherApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spring6starter.hoon.section2.examples.a0.SimpleSpringContextLauncherApplication" />
+      <module name="hoon-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring6starter.hoon.section2.examples.a0.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataServiceApplicationTest.findMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hoon-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring6starter.hoon.section2.examples.a2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring6starter.hoon.section2.examples.a2" />
+      <option name="MAIN_CLASS_NAME" value="com.spring6starter.hoon.section2.examples.a2.DataServiceApplicationTest" />
+      <option name="METHOD_NAME" value="findMax" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataServiceApplicationTest.printAllBeans" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hoon-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring6starter.hoon.section2.examples.a2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring6starter.hoon.section2.examples.a2" />
+      <option name="MAIN_CLASS_NAME" value="com.spring6starter.hoon.section2.examples.a2.DataServiceApplicationTest" />
+      <option name="METHOD_NAME" value="printAllBeans" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataServiceApplicationTest.printApplicationBeans" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hoon-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring6starter.hoon.section2.examples.a2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring6starter.hoon.section2.examples.a2" />
+      <option name="MAIN_CLASS_NAME" value="com.spring6starter.hoon.section2.examples.a2.DataServiceApplicationTest" />
+      <option name="METHOD_NAME" value="printApplicationBeans" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Spring6Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="hoon" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring6starter.hoon.Spring6Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DataServiceApplicationTest.findMax" />
+        <item itemvalue="JUnit.DataServiceApplicationTest.printApplicationBeans" />
+        <item itemvalue="JUnit.DataServiceApplicationTest.printAllBeans" />
+        <item itemvalue="Application.DepInjectionLauncherApplication" />
+        <item itemvalue="Application.SimpleSpringContextLauncherApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8a6951d-df69-4ef7-a0de-33d5fd2d783b" name="Changes" comment="" />
+      <created>1702300369990</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702300369990</updated>
+      <workItem from="1702300371148" duration="750000" />
+      <workItem from="1702357602236" duration="1419000" />
+      <workItem from="1702359466457" duration="1212000" />
+      <workItem from="1702367815038" duration="56000" />
+      <workItem from="1702618737106" duration="599000" />
+      <workItem from="1702621724907" duration="1897000" />
+      <workItem from="1703052803486" duration="10433000" />
+      <workItem from="1703232899991" duration="600000" />
+      <workItem from="1707213055213" duration="3397000" />
+      <workItem from="1707281330225" duration="681000" />
+      <workItem from="1707306384550" duration="1417000" />
+      <workItem from="1707492895536" duration="8000" />
+      <workItem from="1708418428350" duration="640000" />
+      <workItem from="1708498739923" duration="116000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: del application context">
+      <option name="closed" value="true" />
+      <created>1702300589744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702300589744</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: Spring IoC 컨테이너를 이용한 게이밍 애플리케이션 개발&#10;&#10;- IoC 컨테이너를 이용한 느슨한 결합 코드 작성&#10;- Spring이 관리하는 Bean 생성 및 관리 코드">
+      <option name="closed" value="true" />
+      <created>1702301115436</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702301115436</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refactor: context try-with-resource 적용">
+      <option name="closed" value="true" />
+      <created>1702358067550</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702358067550</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: 강한 결합으로 이뤄진 게이밍 애플리케이션">
+      <option name="closed" value="true" />
+      <created>1702359669620</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702359669620</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: SuperContraGame을 이용한 강한 결합 예시 작성&#10;&#10;- GameRunner 클래스는 특정 게임(클래스)에 강하게 결합되어있다&#10;-&gt; 즉 특정 게임을 추가할 때 많은 작업이 발생한다.">
+      <option name="closed" value="true" />
+      <created>1702359839552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702359839552</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: Interface를 이용한 느슨한 결합&#10;&#10;- GameRunner 클래스는 특정 게임에 강하게 결합되어 있음&#10;- 게임을 변경할 땐 GameRunner 클래스 코드를 수정해야함.&#10;- ConsoleGame 인터페이스를 도입함으로써 GameRunner 클래스가 특정 게임에서 분리됨 (느슨한 결합)">
+      <option name="closed" value="true" />
+      <created>1702360275065</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702360275065</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: KartGame 게임이 새로 추가되었을 때">
+      <option name="closed" value="true" />
+      <created>1702360364117</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702360364117</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Spring을 사용한 프로젝트 구성">
+      <option name="closed" value="true" />
+      <created>1703052892318</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703052892318</updated>
+    </task>
+    <task id="LOCAL-00009" summary="동일한 타입의 Bean이 여러개 있을 때 특정 Bean을 사용하는 코드 작성">
+      <option name="closed" value="true" />
+      <created>1703053199655</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703053199655</updated>
+    </task>
+    <task id="LOCAL-00010" summary="하나의 Class에서 Spring Context를 실행하는 코드&#10;&#10;- 별도의 Configuration 클래스 없이 Main 함수가 위치한 클래스에서 Bean을 등록한다.">
+      <option name="closed" value="true" />
+      <created>1703053409067</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703053409067</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Component을 이용한 Spring Bean 생성 코드 작성">
+      <option name="closed" value="true" />
+      <created>1703054535480</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703054535480</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ConsoleGame 타입의 Component가 2개 있을 때 @Qualifier를 이용한 특정 Bean을 주입받는 코드&#10;&#10;- Bean 생성과 동일하게 Component도 Spring이 인스턴스를 생성하게 된다.&#10;- 만약 동일한 타입의 Component가 여러개 있다면 특정 Bean을 사용하도록 알려줘야한다.">
+      <option name="closed" value="true" />
+      <created>1703054872954</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703054872954</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ConsoleGame 타입의 Component가 2개 있을 때 @Primary를 이용한 특정 Bean을 주입받는 코드&#10;&#10;- Bean 생성과 동일하게 Component도 Spring이 인스턴스를 생성하게 된다.&#10;- 만약 동일한 타입의 Component가 여러개 있다면 특정 Bean을 사용하도록 알려줘야한다.">
+      <option name="closed" value="true" />
+      <created>1703054924985</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1703054924985</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ConsoleGame 타입의 Component가 2개 있을 때 @Primary를 이용한 특정 Bean을 주입받는 코드&#10;&#10;- Bean 생성과 동일하게 Component도 Spring이 인스턴스를 생성하게 된다.&#10;- 만약 동일한 타입의 Component가 여러개 있다면 특정 Bean을 사용하도록 알려줘야한다.">
+      <option name="closed" value="true" />
+      <created>1707217577434</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707217577434</updated>
+    </task>
+    <task id="LOCAL-00015" summary="의존성 주입 런처">
+      <option name="closed" value="true" />
+      <created>1707306398096</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707306398097</updated>
+    </task>
+    <task id="LOCAL-00016" summary="BusinessCalculationService 예제 구현&#10;&#10;- 생성자 주입으로 의존성 주입 받기&#10;- MongoDbDataService 를 Primary Bean 설정&#10;- Spring 컨텍스트 생성">
+      <option name="closed" value="true" />
+      <created>1707307180215</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1707307180215</updated>
+    </task>
+    <task id="LOCAL-00017" summary="BusinessCalculationService 예제 구현&#10;&#10;- 생성자 주입으로 의존성 주입 받기&#10;- MongoDbDataService 를 Primary Bean 설정&#10;- Spring 컨텍스트 생성">
+      <option name="closed" value="true" />
+      <created>1707307801263</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707307801263</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="chore: del application context" />
+    <MESSAGE value="feat: Spring IoC 컨테이너를 이용한 게이밍 애플리케이션 개발&#10;&#10;- IoC 컨테이너를 이용한 느슨한 결합 코드 작성&#10;- Spring이 관리하는 Bean 생성 및 관리 코드" />
+    <MESSAGE value="refactor: context try-with-resource 적용" />
+    <MESSAGE value="feat: 강한 결합으로 이뤄진 게이밍 애플리케이션" />
+    <MESSAGE value="feat: SuperContraGame을 이용한 강한 결합 예시 작성&#10;&#10;- GameRunner 클래스는 특정 게임(클래스)에 강하게 결합되어있다&#10;-&gt; 즉 특정 게임을 추가할 때 많은 작업이 발생한다." />
+    <MESSAGE value="feat: Interface를 이용한 느슨한 결합&#10;&#10;- GameRunner 클래스는 특정 게임에 강하게 결합되어 있음&#10;- 게임을 변경할 땐 GameRunner 클래스 코드를 수정해야함.&#10;- ConsoleGame 인터페이스를 도입함으로써 GameRunner 클래스가 특정 게임에서 분리됨 (느슨한 결합)" />
+    <MESSAGE value="feat: KartGame 게임이 새로 추가되었을 때" />
+    <MESSAGE value="Spring을 사용한 프로젝트 구성" />
+    <MESSAGE value="동일한 타입의 Bean이 여러개 있을 때 특정 Bean을 사용하는 코드 작성" />
+    <MESSAGE value="하나의 Class에서 Spring Context를 실행하는 코드&#10;&#10;- 별도의 Configuration 클래스 없이 Main 함수가 위치한 클래스에서 Bean을 등록한다." />
+    <MESSAGE value="Component을 이용한 Spring Bean 생성 코드 작성" />
+    <MESSAGE value="ConsoleGame 타입의 Component가 2개 있을 때 @Qualifier를 이용한 특정 Bean을 주입받는 코드&#10;&#10;- Bean 생성과 동일하게 Component도 Spring이 인스턴스를 생성하게 된다.&#10;- 만약 동일한 타입의 Component가 여러개 있다면 특정 Bean을 사용하도록 알려줘야한다." />
+    <MESSAGE value="ConsoleGame 타입의 Component가 2개 있을 때 @Primary를 이용한 특정 Bean을 주입받는 코드&#10;&#10;- Bean 생성과 동일하게 Component도 Spring이 인스턴스를 생성하게 된다.&#10;- 만약 동일한 타입의 Component가 여러개 있다면 특정 Bean을 사용하도록 알려줘야한다." />
+    <MESSAGE value="의존성 주입 런처" />
+    <MESSAGE value="BusinessCalculationService 예제 구현&#10;&#10;- 생성자 주입으로 의존성 주입 받기&#10;- MongoDbDataService 를 Primary Bean 설정&#10;- Spring 컨텍스트 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="BusinessCalculationService 예제 구현&#10;&#10;- 생성자 주입으로 의존성 주입 받기&#10;- MongoDbDataService 를 Primary Bean 설정&#10;- Spring 컨텍스트 생성" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/GameApplication.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/GameApplication.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/6.0.14/spring-context-6.0.14-sources.jar!/org/springframework/context/annotation/AnnotatedBeanDefinitionReader.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/6.0.14/spring-context-6.0.14-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>949</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/6.0.14/spring-context-6.0.14-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>946</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/spring6starter/hoon/section2/GameApplication.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
