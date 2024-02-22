@@ -1,4 +1,4 @@
-package com.spring6starter.hoon.section4.chapt4_bean_init_destroy;
+package com.spring6starter.hoon.section4.chapt3_bean_init_destroy;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
