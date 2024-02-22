@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <bean id="myName" class="java.lang.String">
+        <constructor-arg value="박성훈"/>
+    </bean>
+
+    <bean id="age" class="java.lang.Integer">
+        <constructor-arg value="26"/> <!-- 생성자 주입 -->
+    </bean>
+
+    <!-- 빈을 각각 정의하거나, Component 스캔하기 -->
+    <!--    <context:component-scan base-package="com.spring6starter.hoon.section2.game"/>-->
+    <bean id="game" class="com.spring6starter.hoon.section2.game.KartGame">
+
+    </bean>
+
+    <bean id="gameRunner" class="com.spring6starter.hoon.section2.game.GameRunner">
+        <constructor-arg ref="game"/> <!-- 값이 아닌 객체 참조이므로 ref -->
+    </bean>
+
+</beans>
