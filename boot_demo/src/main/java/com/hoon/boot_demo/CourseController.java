@@ -1,6 +1,8 @@
 package com.hoon.boot_demo;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
@@ -17,5 +19,9 @@ public class CourseController {
         );
     }
 
+    @RequestMapping("/courses/1")
+    public Course getCourse() {
+        return new Course(1, "Learn SpringBoot", "hoon");
+    }
 
 }
