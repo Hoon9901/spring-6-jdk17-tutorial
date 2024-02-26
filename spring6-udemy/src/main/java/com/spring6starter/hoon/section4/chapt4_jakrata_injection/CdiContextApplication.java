@@ -9,28 +9,21 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Arrays;
 
 //@Component // Spring 방식
-@Named // CDI 방식
-class BusinessService {
-
-    private DataSource dataSource;
-
-
-    public DataSource getDataSource() {
-        System.out.println("getDatasource");
-        return dataSource;
-    }
-
-    //    @Autowired // 메서드 주입 시 Autowired 필수
+@Named
+class MyService {
     @Inject
-    public void setDataSource(DataSource dataSource) {
-        System.out.println("Setter Injection");
-        this.dataSource = dataSource;
+    private MyBean myBean;
+
+    public String sayHello() {
+        return myBean.sayHello();
     }
 }
 
-@Named // ~Component
-class DataSource {
-
+@Named
+class MyBean {
+    public String sayHello() {
+        return "Hello MyBean";
+    }
 }
 
 @Configuration
@@ -42,8 +35,7 @@ public class CdiContextApplication {
             Arrays.stream(context.getBeanDefinitionNames())
                     .forEach(System.out::println);
 
-            System.out.println(context.getBean(BusinessService.class).getDataSource());
+            System.out.println(context.getBean(MyService.class).sayHello());
         }
     }
-
 }
